@@ -1,0 +1,139 @@
+* {
+    margin: 0; /*This and the next section are to edit all links*/
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+
+    background-color: azure;
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+
+    .header {
+        max-height: 8vh;
+        min-height: 8vh;
+        width: 100%;
+        padding-top: .70%;
+        padding-bottom: .70%;
+        display:flex;
+        justify-content: space-between;
+        overflow: hidden;
+
+
+        background-color: cornflowerblue;
+        color:black;
+        border-bottom: solid 3px;
+    }
+
+    .header a:hover {
+        background-color: crimson;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+        .left-header {
+            display:flex;
+            flex-basis: 15%;
+            aspect-ratio: 1/1;
+            padding-left: 1.75%;
+
+                        font-size: 23px;
+            font-weight: 900;
+        }
+
+            #header-logo {
+                width: auto;
+                height: 100%;
+                border-radius: 100%;
+            }
+
+        .right-header {
+            display:flex;
+            align-items: flex-end;
+
+            padding-right: 5%;
+
+            gap: 30px;
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+
+
+  .main {
+      display: flex;
+      flex-grow: 1;
+      align-items: stretch;
+  }
+
+      .sidebar {
+          flex-direction: column;
+          flex-grow: 0;
+          flex-shrink: 0;
+          /*width: 256;*/
+          max-width: 16vw;
+          min-width: 16vw;
+          Padding: 15px;
+          background-color:lightslategrey;
+          color:black;
+
+          border-right: solid 3px;
+        
+    }
+
+    .contents {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 16vw;
+        padding-left: 16vw;
+    }
+
+    .content-bock {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    #about-me {
+        display: flex;
+        gap: 15px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    #portrait {
+        align-items: flex-start;
+        width: 100%;
+        border-radius: 75%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        padding: 15px;
+        background-color:cornflowerblue;
+        color:black;
+        border-top: solid 3px;
+        flex-shrink: 0;
+     }
